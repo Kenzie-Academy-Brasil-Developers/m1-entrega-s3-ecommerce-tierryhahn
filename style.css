@@ -1,13 +1,13 @@
 body {
     font-family: 'inter', sans-serif;
 }
+/*<!------------Cabeçalho-------------->*/
 .header {
     height: 70px;
     background: #F5F5F5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .header h1{
     font-weight: bold;
@@ -15,8 +15,12 @@ body {
     line-height: 24px;
     padding: 0px 118px;
 }
+/*<!------------Menu de navegação-------------->*/
 .menuNav{
     letter-spacing: 2px;
+}
+.menuNav li.todos{
+    color: #333333;
 }
 .menuNav ul{
     display: flex;
@@ -26,7 +30,10 @@ body {
 .menuNav ul li {
     padding: 8px;
     font-weight: 500;
+    color: #828282;
+    cursor: pointer;
 }
+/*<!------------Conteúdo principal-------------->*/
 main{
     display: flex;
 }
@@ -48,12 +55,118 @@ main{
     display: flex;
     justify-content: center;
 }
-.carrinho{
-    width: 33%;
-}
 img{
     width: 190px;
     height: 150px;
 }
-
+.boxText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 15px;
+}
+.tipoPeca{
+    background: #2E245E;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px;
+}
+.boxText h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin: 15px 0px;
+}
+.descricao{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+}
+.preco{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E245E;
+    margin: 15px 0px;
+}
+.addCart{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #828282;
+}
+/*<!------------Barra de pesquisa e carrinho-------------->*/
+.carrinho{
+    width: 33%;
+}
+.pesquisarProdutos{
+    margin: 27px 0px 10px 0px;
+}
+input{
+    width: 246px;
+    height: 50px;
+    left: 1138px;
+    top: 97px;
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+    margin: 0px 5px 0px 0px;
+    padding: 17px 69px 17px 14px;
+}
+button{
+    width: 96px;
+    height: 50px;
+    left: 1392px;
+    top: 97px;
+    background: #6B54DE;
+    color: white;
+    border: none;
+}
+.textoCarrinho{
+    width: 347px;
+    height: 50px;
+    left: 1138px;
+    top: 157px;
+    background: #6B54DE;
+    text-align: center;
+}
+.textoCarrinho h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.itens{
+    width: 347px;
+    height: 344px;
+    left: 1138px;
+    top: 200px;
+    background: #F5F5F5;
+}
+.itens h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #333333;
+}
+.itens p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+}
 
