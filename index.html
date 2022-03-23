@@ -18,18 +18,18 @@
         <h1>Weartake</h1>
         <!------------Menu de navegação-------------->
         <nav class="menuNav">
-            <ul>
-                <li class="todos">Todos</li>
-                <li>Acessórios</li>
-                <li>Calçados</li>
-                <li>Camisetas</li>
+            <ul id="listNav">
+                <li data-tag="Todos" class="item-nav" active>Todos</li>
+                <li data-tag="Acessórios" class="item-nav">Acessórios</li>
+                <li data-tag="Calçados" class="item-nav">Calçados</li>
+                <li data-tag="Camisetas" class="item-nav">Camisetas</li>
             </ul>
         </nav>
     </header>
     <!------------Conteúdo principal-------------->
     <main class="container">
             <div class="post-container">
-                <ul>
+                <ul class="post-list">
                     <li class="cardItem">
                         <div class="boxImg">
                             <img src="img/Men-Jacket-Front-Black__15466 1.png" alt="">
@@ -42,84 +42,39 @@
                             <p class="addCart">Adicionar ao carrinho</p>
                         </div>
                     </li>
-                    <li class="cardItem">
-                        <div class="boxImg">
-                            <img src="img/image 1.png" alt="">
-                        </div>
-                        <div class="boxText">
-                            <span class="tipoPeca">Acessórios</span>
-                            <h2>Black Hat</h2>
-                            <p class="descricao">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
-                            <span class="preco">R$ 100,00</span>
-                            <p class="addCart">Adicionar ao carrinho</p>
-                        </div>
-                    </li>
-                    <li class="cardItem">
-                        <div class="boxImg">
-                            <img src="img/Surgical-Mask-Black__89554 1.png" alt="">
-                        </div>
-                        <div class="boxText">
-                            <span class="tipoPeca">Acessórios</span>
-                            <h2>Mask</h2>
-                            <p class="descricao">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
-                            <span class="preco">R$ 40,00</span>
-                            <p class="addCart">Adicionar ao carrinho</p>
-                        </div>
-                    </li>
-                    <li class="cardItem">
-                        <div class="boxImg">
-                            <img src="img/Men-TShirt-Black-Front__70046 1.png" alt="">
-                        </div>
-                        <div class="boxText">
-                            <span class="tipoPeca">Camisetas</span>
-                            <h2>T-Shirt</h2>
-                            <p class="descricao">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
-                            <span class="preco">R$ 100,00</span>
-                            <p class="addCart">Adicionar ao carrinho</p>
-                        </div>
-                    </li>
-                    <li class="cardItem">
-                        <div class="boxImg">
-                            <img src="img/mockup-a0dc2330__62146 1.png" alt="">
-                        </div>
-                        <div class="boxText">
-                            <span class="tipoPeca">Camisetas</span>
-                            <h2>Short-Sleeve T-Shirt</h2>
-                            <p class="descricao">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...</p>
-                            <span class="preco">R$ 100,00</span>
-                            <p class="addCart">Adicionar ao carrinho</p>
-                        </div>
-                    </li>
-                    <li class="cardItem">
-                        <div class="boxImg">
-                            <img src="img/mockup-9b9894f1__67347 1.png" alt="">
-                        </div>
-                        <div class="boxText">
-                            <span class="tipoPeca">Camisetas</span>
-                            <h2>Champion Packable Jacket</h2>
-                            <p class="descricao">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
-                            <span class="preco">R$ 100,00</span>
-                            <p class="addCart">Adicionar ao carrinho</p>
-                        </div>
-                    </li>
                 </ul>
             </div>
         <!------------Barra de pesquisa e carrinho-------------->
             <div class="carrinho">
                 <div class="pesquisarProdutos">
-                    <input type="text" name="" id="" placeholder="Digite aqui sua pesquisa">
-                    <button>Pesquisar</button>
+                    <input type="text" name="" id="inputFind" placeholder="Digite aqui sua pesquisa">
+                    <button id="pesquisar">Pesquisar</button>
                 </div>
                 <div class="produtosCarrinho">
                     <div class="textoCarrinho">
                         <h2>Carrinho de compras</h2>
                     </div>
                     <div class="itens">
-                        <h2>Carrinho vazio</h2>
-                        <p>Adicione itens</p>
+                        <ul id="ulcarrinho"></ul>
+                        <div id="cartVazio">
+                            <h2>Carrinho vazio</h2>
+                            <p>Adicione itens</p>
+                        </div>
+                    </div>
+                    <div id="contador">
+                        <div class="quantidade">
+                            <p>Quantidade:</p>
+                            <p>0</p>
+                        </div>
+                        <div class="total">
+                            <p>Total:</p>
+                            <p>R$ 200,00</p>
+                        </div>
                     </div>
                 </div>
             </div>
     </main>
+    
+    <script src="main.js"></script>
 </body>
 </html>
